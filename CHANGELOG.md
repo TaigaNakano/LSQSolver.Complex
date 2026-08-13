@@ -4,7 +4,7 @@ All notable changes to LSQSolver.Complex are documented in this file.
 
 The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and version numbers are intended to follow semantic versioning.
 
-## [Unreleased]
+## [1.0.0]
 
 ### Added
 

@@ -8,10 +8,26 @@
     <Title>LSQSolver.Complex</Title>
     <Authors>TaigaNakano</Authors>
     <Copyright>TaigaNakano</Copyright>
+    <PackageIcon>Project_icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/TaigaNakano/LSQSolver.Complex</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/TaigaNakano/LSQSolver.Complex</PackageProjectUrl>
+    <Description>Complex number extension of LSQSolver</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="LSQSolver" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\Project_icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
