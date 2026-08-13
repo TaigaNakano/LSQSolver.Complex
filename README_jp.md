@@ -1,6 +1,6 @@
 # LSQSolver.Complex
 
-[<u>English version</u>](README.md)
+[<u>English version</u>](https://github.com/TaigaNakano/LSQSolver.Complex/blob/master/README.md)
 
 [LSQSolver](https://github.com/TaigaNakano/LSQSolver) の複素数対応拡張です。
 

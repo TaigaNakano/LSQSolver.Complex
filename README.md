@@ -1,6 +1,6 @@
 # LSQSolver.Complex
 
-[<u>日本語版</u>](README_jp.md)
+[<u>日本語版</u>](https://github.com/TaigaNakano/LSQSolver.Complex/blob/master/README_jp.md)
 
 A lightweight complex-valued extension for [LSQSolver](https://github.com/TaigaNakano/LSQSolver).
 
