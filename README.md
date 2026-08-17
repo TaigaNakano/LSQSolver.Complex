@@ -8,17 +8,14 @@ A lightweight complex-valued extension for [LSQSolver](https://github.com/TaigaN
 
 The extension uses `System.Numerics.Complex` and supports single and multiple right-hand sides.
 
----
-
 ## Overview
 
 The parent project, **LSQSolver**, is a lightweight dense least-squares solver for .NET based on column-pivoted QR decomposition (CPQR), numerical rank detection, and Cholesky-based minimum-norm reconstruction. It supports overdetermined, underdetermined, and rank-deficient systems without requiring SVD or an external numerical library.
 
 `LSQSolver.Complex` adds complex-valued input and output while keeping the numerical kernel real-valued. The extension is intentionally thin: complex matrices and vectors are realified, solved by LSQSolver, and converted back to `System.Numerics.Complex`.
 
-Parent project: <https://github.com/TaigaNakano/LSQSolver>
+**Related projects:** [LSQSolver](https://github.com/TaigaNakano/LSQSolver) · [LSQSolver.Complex](https://github.com/TaigaNakano/LSQSolver.Complex) · [LSQSolver.MathNet](https://github.com/TaigaNakano/LSQSolver.MathNet)
 
----
 
 ## Installation
 
@@ -28,7 +25,6 @@ dotnet add package LSQSolver.Complex
 
 `LSQSolver.Complex` uses the original `LSQSolver` package as its numerical kernel.
 
----
 
 ## Usage
 
@@ -212,7 +208,6 @@ The resulting real problem is passed to LSQSolver. The real solution is then rec
 
 The Euclidean norm of the interleaved real vector is identical to the usual complex 2-norm, so the minimum-norm solution of the realified problem corresponds to the minimum-norm solution of the original complex problem.
 
----
 
 ## Limitations
 
@@ -227,7 +222,6 @@ This package is an adapter around the real-valued LSQSolver kernel, not a native
 
 For these reasons, this extension is intended primarily as a simple way to use the existing LSQSolver engine with complex-valued data rather than as a replacement for a highly optimized native complex linear-algebra library.
 
----
 
 ## Possible Future Development
 
@@ -240,7 +234,14 @@ Possible extensions include:
 
 The current realification-based implementation is intentionally kept small so that these options can be introduced later without unnecessarily complicating the initial package.
 
----
+
+## Related Projects
+
+| Project | Description |
+|---|---|
+| [LSQSolver](https://github.com/TaigaNakano/LSQSolver) | The core rank-aware least-squares solver for real-valued dense problems. |
+| [LSQSolver.Complex](https://github.com/TaigaNakano/LSQSolver.Complex) | Complex-valued least-squares support built on LSQSolver. |
+| [LSQSolver.MathNet](https://github.com/TaigaNakano/LSQSolver.MathNet) | MathNet.Numerics integration for real and complex least-squares problems. |
 
 ## License
 
