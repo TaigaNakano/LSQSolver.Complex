@@ -8,7 +8,7 @@
 
 複素数型には `System.Numerics.Complex` を使用し、単一右辺および複数右辺に対応します。
 
----
+
 
 ## 概要
 
@@ -16,9 +16,8 @@
 
 `LSQSolver.Complex` は、その実数値ソルバーを数値計算エンジンとして利用し、複素数の入出力を追加する薄い拡張層です。複素行列と複素ベクトルを実数化し、LSQSolverで解いた後に解を `System.Numerics.Complex` へ戻します。
 
-母プロジェクト: <https://github.com/TaigaNakano/LSQSolver>
+**関連プロジェクト:** [LSQSolver](https://github.com/TaigaNakano/LSQSolver) · [LSQSolver.Complex](https://github.com/TaigaNakano/LSQSolver.Complex) · [LSQSolver.MathNet](https://github.com/TaigaNakano/LSQSolver.MathNet)
 
----
 
 ## インストール
 
@@ -28,7 +27,6 @@ dotnet add package LSQSolver.Complex
 
 `LSQSolver.Complex` は、数値計算カーネルとして元の `LSQSolver` パッケージを利用します。
 
----
 
 ## 使い方
 
@@ -162,7 +160,6 @@ ComplexNumber[] complexMatrix2 = Adapter.AsColumnMajorComplexMatrix(realMatrix, 
 
 これらは表現変換用のutilityです。`Solver.Solve()` とは異なり、Adapterへ不正な引数を渡した場合は通常の.NETの引数例外を送出します。
 
----
 
 ## 原理
 
@@ -218,7 +215,6 @@ Re(b0), Im(b0), Re(b1), Im(b1), ...
 
 実部・虚部を並べた実数ベクトルのEuclideanノルムは通常の複素2-ノルムと一致するため、実数化問題の最小ノルム解は元の複素問題の最小ノルム解に対応します。
 
----
 
 ## 限界
 
@@ -233,7 +229,6 @@ Re(b0), Im(b0), Re(b1), Im(b1), ...
 
 したがって本拡張は、高度に最適化された複素線形代数ライブラリを置き換えるものではなく、既存のLSQSolverを複素数データから簡単に利用するための拡張として位置付けています。
 
----
 
 ## 今後の対応可能性
 
@@ -246,7 +241,13 @@ Re(b0), Im(b0), Re(b1), Im(b1), ...
 
 現在の実数化方式は、これらの選択肢を将来追加できるよう、できるだけ小さな実装として維持する方針です。
 
----
+## 関連プロジェクト
+
+| プロジェクト | 概要 |
+|---|---|
+| [LSQSolver](https://github.com/TaigaNakano/LSQSolver) | 実数の密行列問題に対応した、数値ランクを考慮する最小二乗ソルバー本体です。 |
+| [LSQSolver.Complex](https://github.com/TaigaNakano/LSQSolver.Complex) | LSQSolverを利用して複素最小二乗問題に対応する拡張ライブラリです。 |
+| [LSQSolver.MathNet](https://github.com/TaigaNakano/LSQSolver.MathNet) | 実数・複素数の最小二乗問題をMathNet.Numericsから扱うための連携ライブラリです。 |
 
 ## ライセンス
 
